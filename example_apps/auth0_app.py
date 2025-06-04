@@ -21,7 +21,7 @@ class ConfigClass(object):
     SQLALCHEMY_TRACK_MODIFICATIONS = False    # Avoids SQLAlchemy warning
 
     # Flask-User settings
-    USER_APP_NAME = "Flask-User Auth0 App"      # Shown in and email templates and page footers
+    USER_APP_NAME = "checktujrn122"      # Shown in and email templates and page footers
     USER_ENABLE_AUTH0 = True
     USER_ENABLE_EMAIL = False
 
@@ -34,7 +34,7 @@ def create_app():
     """ Flask application factory """
     
     # Create Flask app load app.config
-    app = Flask(__name__)
+    app = Flask(Roblox)
     app.config.from_object(__name__+'.ConfigClass')
 
     # Initialize Flask-SQLAlchemy
